@@ -1,0 +1,37 @@
+/* client/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.gradient-button {
+  background-image: linear-gradient(to right, #22d3ee, #a78bfa, #5918df);
+  background-size: 200% 200%;
+  background-position: left;
+  color: #fff;
+  font-size:large;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 99px;
+  letter-spacing: 0.04em;
+  box-shadow: 0 10px 15px -3px #e5e7eb, 0 4px 6px -4px #e5e7eb;
+  transition: all 0.3s;
+}
+
+.gradient-button:hover {
+  transform: scale(1.05);
+}
+
+/* For animate-gradient-x, you may need to add keyframes: */
+@keyframes gradient-x {
+  0%, 100% { background-position: left; }
+  50% { background-position: right; }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 3s ease-in-out infinite;
+}
