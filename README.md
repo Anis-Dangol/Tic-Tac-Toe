@@ -2,6 +2,10 @@
 
 A modern, interactive Tic Tac Toe game built with React and Vite, featuring a unique twist on the classic game with move limitations and beautiful UI.
 
+## Live Demo
+
+👉 [Play the game here!](https://endless-tictactoe.netlify.app/)
+
 ## 🎮 Game Features
 
 - **Classic Tic Tac Toe** gameplay with a modern twist
