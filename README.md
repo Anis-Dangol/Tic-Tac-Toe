@@ -2,6 +2,10 @@
 
 A modern, interactive Tic Tac Toe game built with React and Vite, featuring a unique twist on the classic game with move limitations and beautiful UI.
 
+## Live Demo
+
+👉 [Play the game here!](https://endless-tictactoe.netlify.app/)
+
 ## 🎮 Game Features
 
 - **Classic Tic Tac Toe** gameplay with a modern twist
@@ -26,7 +30,6 @@ A modern, interactive Tic Tac Toe game built with React and Vite, featuring a un
 - **Vite** - Fast build tool and development server
 - **Tailwind CSS** - Utility-first CSS framework for styling
 - **JavaScript (ES6+)** - Modern JavaScript features
-- **Electron** - Desktop application support
 
 ## 📁 Project Structure
 
@@ -38,9 +41,8 @@ src/
 ├── components/
 │   └── Board.jsx          # Game board component
 ├── utils/
-│   └── gameLogic.jsx      # Game logic and winner detection
-└── electron/
-    └── main.js            # Electron main process
+    └── gameLogic.jsx      # Game logic and winner detection
+
 ```
 
 ## 🏃‍♂️ Getting Started
@@ -76,17 +78,6 @@ npm run dev
 ### Available Scripts
 
 - `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-
-### Building as Desktop App
-
-This project includes Electron support for creating a desktop application:
-
-```bash
-npm run electron:build
-```
 
 ## 🎨 Design Features
 
@@ -107,15 +98,6 @@ npm run electron:build
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 🎯 Future Enhancements
-
-- [ ] Add sound effects
-- [ ] Implement AI opponent
-- [ ] Add score tracking
-- [ ] Multiple game modes
-- [ ] Online multiplayer support
-- [ ] Game statistics and history
 
 ---
 
