@@ -13,7 +13,7 @@ body {
   background-size: 200% 200%;
   background-position: left;
   color: #fff;
-  font-size:large;
+  font-size: large;
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 99px;
@@ -28,10 +28,47 @@ body {
 
 /* For animate-gradient-x, you may need to add keyframes: */
 @keyframes gradient-x {
-  0%, 100% { background-position: left; }
-  50% { background-position: right; }
+  0%,
+  100% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
 }
 
 .animate-gradient-x {
   animation: gradient-x 3s ease-in-out infinite;
+}
+
+/* Winning celebration animations */
+@keyframes celebration {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+
+.animate-celebration {
+  animation: celebration 0.6s ease-in-out;
+}
+
+.winning-text {
+  text-shadow: 0 0 10px rgba(0, 255, 98, 0.8), 0 0 20px rgba(0, 255, 225, 0.8);
+}
+
+.winning-line {
+  animation: drawLine 0.5s ease-out, lineGlow 1s ease-in-out infinite 0.5s;
 }
